@@ -1,0 +1,16 @@
+<section class="auth" id="auth" #auth>
+  <div class="container">
+    <div class="common-title">Войти</div>
+    <div class="auth-block">
+      <div class="auth-form">
+        <div class="order-form-text"></div>
+        <div class="order-form-inputs" [formGroup] = "form">
+          <input type="email" placeholder="Ваш email" id="email" formControlName = "email" [class] = "{'error': form.get('email')?.invalid && (form.get('email')?.dirty || form.get('email')?.touched)}">
+          <input type="password" placeholder="Ваш пароль" id="password" formControlName = "password" [class] = "{'error': form.get('password')?.invalid && (form.get('password')?.dirty || form.get('password')?.touched)}">
+          <input type="text" placeholder="Ваш телефон" id="phone" formControlName = "phone" [class] = "{'error': form.get('phone')?.invalid && (form.get('phone')?.dirty || form.get('phone')?.touched)}">
+          <button class="button violet-button" id="login" (click) = "confirmOrder()" [disabled] = "!form.valid">Авторизоваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

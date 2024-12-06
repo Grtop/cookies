@@ -316,3 +316,26 @@
   border-color: red;
 
 }
+
+.auth {
+  padding-top: 161px;
+  position: relative;
+}
+
+.auth .container {
+  position: relative;
+}
+
+.auth-block {
+  margin-right: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(50px);
+  display: flex;
+}
+
+.auth-form {
+  max-width: 387px;
+  padding: 40px 0 44px 0;
+  box-sizing: border-box;
+}
+
