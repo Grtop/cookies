@@ -6,7 +6,12 @@ import { FormBuilder, Validators } from '@angular/forms';
   templateUrl: './auth.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class LoginComponent {
+form: any;
+confirmOrder() {
+throw new Error('Method not implemented.');
+}
   loginForm = this.formBuilder.group({
     username: ['', Validators.required],
     password: ['', Validators.required]
@@ -15,7 +20,7 @@ export class LoginComponent {
   constructor(private formBuilder: FormBuilder) { }
 
   onSubmit() {
-   
+
     console.log(this.loginForm.value);
   }
 }
